@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Rodrigues Corretor</title>
+    <style>
+        body {
+            background-color: rgb(61, 134, 237);
+            color: aliceblue;
+            font: normal 20pt Arial;
+
+        }
+        header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: rgb(15, 85, 183);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #bababa;
+}
+.carrossel {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.carrossel img {
+  position: absolute;
+  top: 0;
+  left: 10;
+  width: ;
+  height:   ;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.carrossel img.active {
+  opacity: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem {
+  width: 50%;
+}
+
+.imagem img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.texto {
+  width: 50%;
+  padding: 20px;
+}
+
+.texto h2 {
+  font-size: 24px;
+}
+
+.texto p {
+  font-size: 16px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>                                               <!--Aqui está configurando o cabeçalho horizontal-->
+          <ul>
+            <li><a href="#">Início</a></li>                 <!--Botão de início, cada linha é um botão-->
+            <li><a href="#">Quem somos</a></li>             
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Conheça SC</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="carrossel">                               <!--Aqui foi feito um carrosel de imagens de residências genéricas que mais p frente serão os imóveis do corretor-->
+        <img src="imagem1.jpg" alt="Imagem 1">
+        <img src="imagem2.jpg" alt="Imagem 2">
+        <img src="imagem3.jpg" alt="Imagem 3">
+      </div>
+      <div class="container">                              <!--Aqui está feito uma div no formato container para armazenar uma imagem e um texto, sendo assim exibe a imagem do imóvel e ao lado a descrição dele.-->
+        <div class="imagem">
+          <img src="apart1.jpg" alt="Minha Imagem" style="height: 300px; width: 300px;">
+        </div>
+        <div class="texto">
+          <h2>São José Resdiencial</h2>
+          <p>Apartamento próximo ao shopping itaguaçu, perto de padaria, academia, farmácia e supermercado, a 10 minutos da ilha. Garagem para dois carros e bicicletário.</p>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="script.js"></script>
+   </body>
+</html>
